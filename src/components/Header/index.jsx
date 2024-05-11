@@ -1,13 +1,18 @@
+import ListaMenuMobile from './ListaMenuMobile/index';
+
+import { useState } from 'react';
 import logo from '../../img/logoM.png';
 
 import { HeaderContainer, ImageLogo, MenuHamburger, ListaMenu } from './style';
 
 function Header() {
+    const [menu, setMenu] = useState(false);
+
     return (
         <HeaderContainer>
             <a href="./"><ImageLogo src={logo} alt="logo" /></a>
 
-            <MenuHamburger>
+            <MenuHamburger onClick={() => setMenu(true)}>
                 <span></span>
                 <span></span>
                 <span></span>
@@ -21,6 +26,8 @@ function Header() {
                     <li><a href="#message">Contato</a></li>
                 </ListaMenu>
             </nav>
+
+            {/* <ListaMenuMobile isOpen={menu} /> */}
         </HeaderContainer>
     );
 }

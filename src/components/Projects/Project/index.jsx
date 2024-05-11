@@ -1,10 +1,10 @@
 import { ProjectContainer, Description, TechsContainer } from "./style";
 
-function Project({ id, name, description = '', techs, imageUrl, codeUrl, homepage = '' }) {
+function Project({ id, name, description = '', techs, imageUrl, codeUrl, homepage = '', showModal }) {
     return (
         <>
-            <a href={codeUrl} target="_blank"> 
-                <ProjectContainer>
+            {/* <a href={codeUrl} target="_blank">  */}
+                <ProjectContainer onClick={showModal}>
                     <h3>{name}</h3>
                     <Description>{description}</Description>
                     <TechsContainer>
@@ -13,7 +13,7 @@ function Project({ id, name, description = '', techs, imageUrl, codeUrl, homepag
                         ))}
                     </TechsContainer>
                 </ProjectContainer>
-            </a>
+            {/* </a> */}
         </>
     );
 }
