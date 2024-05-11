@@ -1,0 +1,10 @@
+@media (768px <= width) { /* Tablet */
+    .introAboutContainer {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        padding: 2.5rem 1.5rem 0 0;
+    }
+}
