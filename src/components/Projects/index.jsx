@@ -14,6 +14,8 @@ function Projects() {
     const [currentPage, setCurrentPage] = useState(1);
     const [projectsPerPage] = useState(4);
 
+    const [arrayResults, setArrayResults] = useState([]);
+
     const apiProjects = 'https://json-server-projects.vercel.app/projects';
 
     useEffect(() => {
@@ -31,12 +33,23 @@ function Projects() {
 
     const paginate = pageNumber => setCurrentPage(pageNumber);
 
+    function takeWord(event) {
+        const wordToSearch = event.target.value;
+        searchProjects(wordToSearch);
+    }
+
+    function searchProjects(word) {   
+        const filterProjects = projects.filter(element => element.name !== null 
+                                            && element.name.toLowerCase().includes(word.toLowerCase()));
+        console.log(filterProjects);
+    }
+
     return (
         <ProjectsContainer id="projects">
             <h1>Projetos</h1>
             <InputGroup>
                 <img src={searchImage} alt="search image" />
-                <PesquisaInput type="search" placeholder="Pesquisar" />
+                <PesquisaInput onKeyUp={takeWord} type="search" placeholder="Pesquisar" />
                 <FilterImage src={filterImage} alt="Filter of search" />
             </InputGroup>
             <Content>
