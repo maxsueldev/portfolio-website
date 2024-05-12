@@ -14,7 +14,7 @@ function Projects() {
     const [currentPage, setCurrentPage] = useState(1);
     const [projectsPerPage] = useState(4);
 
-    const apiProjects = 'https://json-server-projects.vercel.app/projects';
+    const apiProjects = 'https://portfolio-maxsuel.vercel.app/services/projects';
 
     useEffect(() => {
         const getDataProjects = async () => {
