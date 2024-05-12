@@ -36,7 +36,8 @@ function ProjectsView({ projects }) {
                                                project.homepage)} />
             ))}
 
-            <Modal isOpen={openModal} 
+            <Modal isOpen={openModal}
+                   closeModal={() => setOpenModal(!openModal)} 
                    nameProject={nameProject} 
                    description={description}
                    techs={techs}

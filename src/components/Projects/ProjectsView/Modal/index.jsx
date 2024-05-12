@@ -1,9 +1,10 @@
 import eyeView from '../../../../img/projects/eye.svg';
 import githubView from '../../../../img/projects/github.svg';
+import closeImage from '../../../../img/projects/close-white.svg';
 
-import { ModalOut, ContainerImage, ContentBg, ImageProject, ContentImage, ListaTechs, LinksContainer, Link } from './style';
+import { ModalOut, ContainerImage, ContentBg, ImageProject, ContentImage, ListaTechs, LinksContainer, Link, BtnClose } from './style';
 
-function Modal({ isOpen, nameProject, description, techs, imageUrl, codeUrl, homepage }) {
+function Modal({ isOpen, closeModal, nameProject, description, techs, imageUrl, codeUrl, homepage }) {
     if (isOpen) {
         return (
             <ModalOut>
@@ -24,6 +25,7 @@ function Modal({ isOpen, nameProject, description, techs, imageUrl, codeUrl, hom
                                 <Link href={codeUrl} target='_blank'><img src={githubView} alt="github code" /></Link>
                             </LinksContainer>
                         </ContentImage>
+                        <BtnClose onClick={closeModal} src={closeImage} alt="close modal" />
                     </ContentBg>
                 </ContainerImage>
             </ModalOut>

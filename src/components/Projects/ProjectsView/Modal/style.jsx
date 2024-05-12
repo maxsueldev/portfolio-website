@@ -82,8 +82,16 @@ const Link = styled.a`
     border-radius: 50%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
     cursor: pointer;
 `;
 
-export { ModalOut, ContainerImage, ContentBg, ImageProject, ContentImage, ListaTechs, LinksContainer, Link };
+const BtnClose = styled.img`
+    width: 60px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+`;
+
+export { ModalOut, ContainerImage, ContentBg, ImageProject, ContentImage, ListaTechs, LinksContainer, Link, BtnClose };
