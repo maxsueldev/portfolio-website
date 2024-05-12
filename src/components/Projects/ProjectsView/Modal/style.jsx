@@ -10,19 +10,80 @@ const ModalOut = styled.div`
 `;
 
 const ContainerImage = styled.div`
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 14rem;
+    align-items: center;
 `;
 
-const ImageProject = styled.img`
-    background-repeat: no-repeat;
-    width: 500px;
-    height: 300px;
+const ContentBg = styled.div`
+    width: 900px;
+    height: 420px;
+    position: relative;
     &:hover {
-        background-color: red;
-        opacity: 0.5;
+        background-color: var(--red-color);
     }
 `;
 
-export { ModalOut, ContainerImage, ImageProject };
+const ImageProject = styled.div`
+    width: 900px;
+    height: 420px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    &:hover {
+        opacity: 0.3;
+    }
+
+    &:hover + .contentImage {
+        display: flex;
+    }
+`;
+
+const ContentImage = styled.div`
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+
+    h3 {
+        font-size: 2rem;
+    }
+`;
+
+const ListaTechs = styled.ul`
+    display: flex;
+    gap: 0.4rem;
+
+    li {
+        font-size: 14px;
+        background-color: var(--black-color);
+        padding: 2px 10px;
+    }
+`;
+
+const LinksContainer = styled.div`
+    display: flex;
+    gap: 0.6rem;
+`;
+
+const Link = styled.a`
+    width: 48px;
+    height: 48px;
+    background-color: var(--black-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+`;
+
+export { ModalOut, ContainerImage, ContentBg, ImageProject, ContentImage, ListaTechs, LinksContainer, Link };
