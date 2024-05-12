@@ -1,12 +1,17 @@
 import styled from "styled-components";
 
 const ModalOut = styled.div`
+    display: none;
     width: 100%;
     heigth: 100%;
     background-color: rgb(0, 0, 0, 0.8);
     position: fixed;
     inset: 0 0 0 0;
     z-index: 2;
+
+    @media (768px <= width) {
+        display: block;
+    }
 `;
 
 const ContainerImage = styled.div`

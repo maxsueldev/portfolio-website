@@ -9,6 +9,7 @@ const ProjectContainer = styled.div`
     align-items: center;
     flex-wrap: wrap;
     gap: 0.25rem;
+    text-align: center;
     cursor: pointer;
     border-radius: 1.25rem;
     padding: 0.625rem 1.25rem;
@@ -25,6 +26,7 @@ const Description = styled.div`
 
 const TechsContainer = styled.div`
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 0.625rem;
 
