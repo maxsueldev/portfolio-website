@@ -7,7 +7,7 @@ const HeaderContainer = styled.header`
     justify-content: space-between;
     position: fixed;
     padding: 1.25rem 2.5rem;
-    z-index: 3;
+    z-index: 4;
 `;
 
 const ImageLogo = styled.img`

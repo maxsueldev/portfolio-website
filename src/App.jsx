@@ -1,5 +1,6 @@
 // Components
 import Header from './components/Header/index';
+import LateralNavbar from './components/LateralNavbar/index';
 import Intro from './components/Intro/index';
 import About from './components/About/index';
 import Projects from './components/Projects/index';
@@ -14,6 +15,7 @@ function App() {
   return (
     <>
       <Header />
+      <LateralNavbar />
       <div className='introAboutContainer'>
         <Intro />
         <About />

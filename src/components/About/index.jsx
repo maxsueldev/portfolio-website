@@ -5,7 +5,7 @@ import { AboutContainer, Languages, BtnCurriculo } from './style';
 
 function About() {
     return (    
-        <AboutContainer>
+        <AboutContainer id="about">
             <h1>Sobre mim</h1>
             <p>Olá, me chamo Maxsuel Fernando e desde pequeno tenho grande interesse pelo mundo da tecnologia, sempre dizendo aos meus pais
                 que queria trabalhar com informática. Durante minha jornada acadêmica me via perdido com o tanto de ramos que a

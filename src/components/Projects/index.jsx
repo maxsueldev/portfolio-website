@@ -30,6 +30,7 @@ function Projects() {
     const indexOfLastProject = currentPage * projectsPerPage;
     const indexOfFirstProject = indexOfLastProject - projectsPerPage;
     const currentProjects = projects.slice(indexOfFirstProject, indexOfLastProject);
+    const currentResults = arrayResults.slice(indexOfFirstProject, indexOfLastProject);
 
     const paginate = pageNumber => setCurrentPage(pageNumber);
 
@@ -39,10 +40,17 @@ function Projects() {
     }
 
     function searchProjects(word) {   
-        const filterProjects = projects.filter(element => element.name !== null 
-                                            && element.name.toLowerCase().includes(word.toLowerCase()));
-        console.log(filterProjects);
+        console.log(word);
+        const searchProjects = projects.filter(element => element.name.toLowerCase().includes(word.toLowerCase())
+                                            || element.description.toLowerCase().includes(word.toLowerCase())
+                                            || element.techs.toString().toLowerCase().includes(word.toLowerCase()));
+                                            
+                        // element.techs -->  ["HTML", "CSS", "JavaScript"];
+                        // element.techs = "HTML CSS JavaScript"
+
+        setArrayResults(searchProjects);  
     }
+
 
     return (
         <ProjectsContainer id="projects">
@@ -53,9 +61,9 @@ function Projects() {
                 <FilterImage src={filterImage} alt="Filter of search" />
             </InputGroup>
             <Content>
-                <ProjectsView projects={currentProjects}/>
+                <ProjectsView projects={ (arrayResults.length !== 0 && arrayResults.length !== 27) ? currentResults : currentProjects } />
             </Content>
-            <Pagination projectsPerPage={projectsPerPage} totalProjects={projects.length} paginate={paginate} />
+            <Pagination projectsPerPage={projectsPerPage} totalProjects={(arrayResults.length !== 0 && arrayResults.length !== 27) ? arrayResults.length : projects.length} paginate={paginate} />
         </ProjectsContainer>
     );
 }

@@ -7,7 +7,7 @@ const ModalOut = styled.div`
     background-color: rgb(0, 0, 0, 0.8);
     position: fixed;
     inset: 0 0 0 0;
-    z-index: 2;
+    z-index: 1;
 
     @media (768px <= width) {
         display: block;
