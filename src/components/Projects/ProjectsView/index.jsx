@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
-import Project from '../Project/index';
-import Modal from './Modal/index';
+import Project from '../Project';
+import Modal from './Modal';
 
 function ProjectsView({ projects }) {
     const [openModal, setOpenModal] = useState(false);

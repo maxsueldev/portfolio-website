@@ -1,8 +1,8 @@
 import { LateralNavbarContainer, LinkSection } from './style';
 
 // Dark Mode Imports
-import sunImage from '../../img/darkMode/sun.svg';
-import moonImage from '../../img/darkMode/moon.svg';
+// import sunImage from '../../img/darkMode/sun.svg';
+// import moonImage from '../../img/darkMode/moon.svg';
 
 function LateralNavbar() {
     return (
@@ -35,7 +35,9 @@ function LateralNavbar() {
                 </svg>
                 <p href="#message">Mensagem</p>
             </LinkSection>
-            <img className='darkModeIcon' src={sunImage} id='darkMode' alt="Sun Image" />
+
+            {/* <img onClick={changeDarkMode} className='darkModeIcon' src={sunImage} id='darkMode' alt="Sun Image" /> */}
+            
         </LateralNavbarContainer>
     );
 }

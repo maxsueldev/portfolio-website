@@ -1,6 +1,6 @@
 import {ListaMenu } from './style';
 
-function ListaMenuMobile(isOpen) {
+function ListaMenuMobile({ isOpen }) {
     if(isOpen) {
         return (
             <ListaMenu>

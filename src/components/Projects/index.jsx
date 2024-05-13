@@ -2,7 +2,8 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 
 import ProjectsView from './ProjectsView';
-import Pagination from './Pagination/index';
+import Pagination from './Pagination';
+import ModalFilter from './ModalFilter';
 
 import searchImage from '../../img/projects/search.svg';
 import filterImage from '../../img/projects/filter.svg';
@@ -15,6 +16,7 @@ function Projects() {
     const [projectsPerPage] = useState(4);
 
     const [arrayResults, setArrayResults] = useState([]);
+    const [openModalFilter, setOpenModalFilter] = useState(false);
 
     const apiProjects = 'https://json-server-projects.vercel.app/projects';
 
@@ -51,6 +53,10 @@ function Projects() {
         setArrayResults(searchProjects);  
     }
 
+    function showModalFilter() {
+        setOpenModalFilter(true);
+    }
+
 
     return (
         <ProjectsContainer id="projects">
@@ -58,8 +64,9 @@ function Projects() {
             <InputGroup>
                 <img src={searchImage} alt="search image" />
                 <PesquisaInput onKeyUp={takeWord} type="search" placeholder="Pesquisar" />
-                <FilterImage src={filterImage} alt="Filter of search" />
+                <FilterImage onClick={() => showModalFilter()} src={filterImage} alt="Filter of search" />
             </InputGroup>
+            <ModalFilter isOpen={openModalFilter} closeModal={() => setOpenModalFilter(!openModalFilter)} />
             <Content>
                 <ProjectsView projects={ (arrayResults.length !== 0 && arrayResults.length !== 27) ? currentResults : currentProjects } />
             </Content>

@@ -1,4 +1,4 @@
-import Experience from './Experience/index';
+import Experience from './Experience';
 
 import { ExperiencesContainer } from './style';
 

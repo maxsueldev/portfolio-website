@@ -8,7 +8,7 @@ import { InfosProfile, Photo } from './style';
 
 function Intro() {
     return (
-        <InfosProfile>
+        <InfosProfile className='infosProfile'>
             <Photo src={photo} alt="photo image" />
             <h1>Maxsuel Fernando</h1>
             <p>Front-end Developer | JavaScript + React</p>

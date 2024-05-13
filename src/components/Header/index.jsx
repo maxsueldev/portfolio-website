@@ -1,4 +1,4 @@
-import ListaMenuMobile from './ListaMenuMobile/index';
+import ListaMenuMobile from './ListaMenuMobile';
 
 import { useState } from 'react';
 import logo from '../../img/logoM.png';
@@ -12,7 +12,7 @@ function Header() {
         <HeaderContainer>
             <a href="./"><ImageLogo src={logo} alt="logo" /></a>
 
-            <MenuHamburger onClick={() => changeMenu()}>
+            <MenuHamburger onClick={() => setMenu(menu => !menu)}>
                 <span></span>
                 <span></span>
                 <span></span>
@@ -27,7 +27,7 @@ function Header() {
                 </ListaMenu>
             </nav>
 
-            {/* <ListaMenuMobile isOpen={menu} /> */}
+            <ListaMenuMobile isOpen={menu} />
         </HeaderContainer>
     );
 }
