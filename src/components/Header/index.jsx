@@ -27,7 +27,7 @@ function Header() {
                 </ListaMenu>
             </nav>
 
-            <ListaMenuMobile isOpen={menu} />
+            {/* <ListaMenuMobile isOpen={menu} /> */}
         </HeaderContainer>
     );
 }
