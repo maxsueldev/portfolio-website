@@ -10,14 +10,6 @@ const FooterContainer = styled.div`
     img {
         width: 2rem;
     }
-
-    @media (1025px <= width) {
-        padding: 1.4rem;
-
-        img {
-            width: 2.25rem;
-        }
-    }
 `;
 
 export { FooterContainer }

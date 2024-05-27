@@ -25,9 +25,12 @@ const AboutContainer = styled.div`
     }
 
     @media(1025px <= width) {
+        padding: 5rem 6rem;
+
         p  {
-            font-size: 1.2rem;
-            line-height: 1.65rem;
+            font-size: 1.12rem;
+            line-height: 1.85rem;
+            margin-top: 1.6rem;
         }
     }
 `;

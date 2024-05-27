@@ -1,13 +1,18 @@
 import styled from "styled-components";
 
 const MessageContainer = styled.div`
+    display: var(--flex-display);
+    flex-direction: column;
+    justify-content: center;
     background-color: var(--blue-color);
     color: var(--white-color);
     padding: 3rem 2.5rem;
+    height: 100%;
 
     h1 {
         color: var(--red-color);
         text-align: center;
+        margin-bottom: .4rem;
     }
 
     p {
@@ -20,7 +25,7 @@ const MessageContainer = styled.div`
 
         input {
             width: 100%;
-            height: 3rem;
+            height: 2rem;
             border-radius: 0.8rem;
             outline: none;
             padding: 0 1rem;
@@ -80,7 +85,7 @@ const MessageContainer = styled.div`
 
             input, textarea {
                 font-size: 1.2rem;
-                padding: 1.6rem;
+                padding: 1rem;
             }
 
             textarea {
