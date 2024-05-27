@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const LateralNavbarContainer = styled.div`
-    display: var(--flex-display);
+    display: none;
     flex-direction: column;
     gap: 2rem;
     position: fixed;
@@ -16,6 +16,10 @@ const LateralNavbarContainer = styled.div`
 
     svg:hover + p {
         display: block;
+    }
+
+    @media(768px <= width) {
+        display: var(--flex-display);
     }
 `;
 

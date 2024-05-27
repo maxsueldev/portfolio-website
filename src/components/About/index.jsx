@@ -1,7 +1,4 @@
-import LanguageIcons from './LanguageIcons';
-import curriculumVitae from '../../curriculo/curriculum-vitae.pdf';
-
-import { AboutContainer, Languages, BtnCurriculo } from './style';
+import { AboutContainer } from './style';
 
 function About() {
     return (    
@@ -11,12 +8,6 @@ function About() {
                 que queria trabalhar com informática. Durante minha jornada acadêmica me via perdido com o tanto de ramos que a
                 tecnologia abrange e mesmo querendo ser programador, não tinha noção de qual linguagem estudar. Só em 2017 percebi
                 que o Front-end é minha área de interesse e venho estudando e me dedicando cada vez mais.</p>
-            <Languages>
-                <LanguageIcons />
-                <BtnCurriculo>
-                    <a href={curriculumVitae} download>Meu currículo</a>
-                </BtnCurriculo>
-            </Languages>
         </AboutContainer>
     );
 }

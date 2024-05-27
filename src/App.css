@@ -8,7 +8,7 @@
     z-index: 3;
 }
 
-@media (768px <= width) { /* Tablet */
+/* @media (768px <= width) { 
     .introAboutContainer {
         height: 100vh;
         display: flex;
@@ -17,4 +17,4 @@
         gap: 2rem;
         padding: 2.5rem 1.5rem 0 0;
     }
-}
+} */

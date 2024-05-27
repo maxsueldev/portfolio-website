@@ -16,10 +16,10 @@ function App() {
     <>
       <Header />
       <LateralNavbar />
-      <div className='introAboutContainer'>
+      {/* <div className='introAboutContainer'> */}
         <Intro />
         <About />
-      </div>
+      {/* </div> */}
       <Projects />
       <Skills  />
       <Experiences />

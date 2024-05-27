@@ -12,6 +12,8 @@ const SkillsContainer = styled.div`
     }
 
     @media (768px <= width) {
+        padding: 4rem 6rem;
+        
         h2 {
             text-align: center;
         }
@@ -22,6 +24,8 @@ const SkillsContainer = styled.div`
     }
         
     @media(1025px <= width) {
+        padding: 4rem 8rem;
+
         .design {
             margin: 0 15rem;
         }

@@ -5,11 +5,11 @@ const LanguageIconsContainer = styled.div`
     flex-wrap: wrap;
     justify-content: center;
     gap: 0.625rem;
-    margin-top: 1.6rem;
+    margin-top: .6rem;
     margin-bottom: 0.4rem;
 
     img {
-        width: 9%;
+        width: 7%;
     }
 
     @media (481px <= width) { 
@@ -26,7 +26,7 @@ const LanguageIconsContainer = styled.div`
 
     @media (1025px <= width) {
         img {
-            width: 6%;    
+            width: 9%;    
         }
     }
 `;

@@ -8,7 +8,7 @@ const FooterContainer = styled.div`
     padding: 1rem 0;
 
     img {
-        width: 2.2rem;
+        width: 2rem;
     }
 
     @media (1025px <= width) {
