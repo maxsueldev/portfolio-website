@@ -1,4 +1,4 @@
-import workImage from '../../../img/experiences/work.svg';
+import workImage from '/assets/experiences/work.svg';
 
 import { ExperienceContainer, Title, Local, Description, ImageWork, Date } from './style';
 

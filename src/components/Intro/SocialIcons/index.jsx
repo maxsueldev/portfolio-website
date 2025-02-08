@@ -1,9 +1,9 @@
 // Icons Imports
-import linkedinIcon from '../../../img/intro/social/linkedin.svg';
-import mailIcon from '../../../img/intro/social/mail.svg';
-import githubIcon from '../../../img/intro/social/github.svg';
-import whatsappIcon from '../../../img/intro/social/whatsapp.svg';
-import curriculumIcon from '../../../img/intro/social/curriculum.svg';
+import linkedinIcon from '/assets/intro/social/linkedin.svg';
+import mailIcon from '/assets/intro/social/mail.svg';
+import githubIcon from '/assets/intro/social/github.svg';
+import whatsappIcon from '/assets/intro/social/whatsapp.svg';
+import curriculumIcon from '/assets/intro/social/curriculum.svg';
 
 import curriculumVitae from '../../../curriculo/curriculum-vitae.pdf';
 

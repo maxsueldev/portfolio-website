@@ -5,7 +5,7 @@ import curriculumVitae from '../../curriculo/curriculum-vitae.pdf';
 import SocialIcons from './SocialIcons';
 // import LateralNavbar from './LateralNavbar';
 
-import photo from '../../img/intro/photo.jpg';
+import photo from '/assets/intro/photo.jpg';
 
 import { IntroContainer, InfosProfile, Photo, Languages, BtnCurriculo } from './style';
 

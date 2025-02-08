@@ -1,7 +1,7 @@
 // Icons
-import linkedinIcon from '../../img/intro/social/linkedin.svg';
-import githubIcon from '../../img/intro/social/github.svg';
-import whatsapp from '../../img/intro/social/whatsapp.svg';
+import linkedinIcon from '/assets/intro/social/linkedin.svg';
+import githubIcon from '/assets/intro/social/github.svg';
+import whatsapp from '/assets/intro/social/whatsapp.svg';
 
 import { FooterContainer } from './style';
 

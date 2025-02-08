@@ -1,12 +1,12 @@
 // Icons Imports
-import HtmlIcon from '../../../img/intro/languages/html5.png';
-import CssIcon from '../../../img/intro/languages/css3.png';
-import JsIcon from '../../../img/intro/languages/js.png';
-import ReactIcon from '../../../img/intro/languages/react.svg';
-import TypescriptIcon from '../../../img/intro/languages/typescript.png';
-import SassIcon from '../../../img/intro/languages/sass.png';
-import GitIcon from '../../../img/intro/languages/git.png';
-import FigmaIcon from '../../../img/intro/languages/figma.png';
+import HtmlIcon from '/assets/intro/languages/html5.png';
+import CssIcon from '/assets/intro/languages/css3.png';
+import JsIcon from '/assets/intro/languages/js.png';
+import ReactIcon from '/assets/intro/languages/react.svg';
+import TypescriptIcon from '/assets/intro/languages/typescript.png';
+import SassIcon from '/assets/intro/languages/sass.png';
+import GitIcon from '/assets/intro/languages/git.png';
+import FigmaIcon from '/assets/intro/languages/figma.png';
 
 import { LanguageIconsContainer } from './style';
 

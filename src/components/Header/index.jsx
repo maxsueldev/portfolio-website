@@ -1,7 +1,7 @@
 import ListaMenuMobile from './ListaMenuMobile';
 
 import { useState } from 'react';
-import logo from '../../img/logoM.png';
+import logo from '/assets/logoM.png';
 
 import { HeaderContainer, ImageLogo, MenuHamburger, ListaMenu } from './style';
 

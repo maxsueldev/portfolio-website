@@ -1,43 +1,89 @@
 import styled from "styled-components";
 
-const ProjectContainer = styled.div`
-    width: 26rem;
-    height: 14rem;
-    background-size: cover;
+const ProjectContainer = styled.div` 
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column-reverse;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 0.25rem;
-    text-align: center;
-    cursor: pointer;
-    border-radius: 1.25rem;
-    padding: 0.625rem 1.25rem;
+    align-items: center;
+    padding: 1.25rem;
 
-    h3 {
-        font-size: 1.6rem;
-        font-weight: 500;
-        color: var(--red-color);
+    img {
+        width: 340px;
+        border-radius: 16px;
+    }
+
+    @media(768px <= width) {
+        padding: 0 3rem;
+        margin-top: 4rem;
+
+        img {
+            width: 600px;
+        }
+    }
+
+    @media(1025px <= width) {
+        flex-direction: row;
+        gap: .4rem;
+        padding: 0 5rem;
+
+        img {
+            width: 450px;
+        }
+    }
+
+    @media(1280px <= width) {
+        gap: 1rem;
+        padding: 0 4rem;
+
+        img {
+            width: 600px;
+        }
     }
 `;
 
 const Description = styled.div`
-    font-size: 0.875rem;
-    padding: 0.313rem 0;
-`;
+    font-size: 1rem;
+    margin-top: 1rem;
 
-const TechsContainer = styled.div`
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 0.625rem;
+    h3 {
+        font-size: 2rem; 
+        font-weight: 500;
+        color: var(--red-color);  
+        text-align: center;
+    }
 
     p {
-        font-size: 0.9rem;
-        background-color: var(--red-color);
-        padding: 0.188rem 0.625rem;
+        margin-top: .75rem;
+    }
+
+    @media(1280px <= width) {
+        width: 40%;
     }
 `;
 
-export { ProjectContainer, Description, TechsContainer };
+const TechsList = styled.li`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .25rem 1rem;
+    margin-top: 2rem;
+
+    li {
+        background-color: var(--black-color);
+        padding: .2rem;
+    }
+`;
+
+const ViewProject = styled.div`
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+
+    img {
+        width: 3rem;
+        cursor: pointer;
+    }
+`;
+
+export { ProjectContainer, Description, TechsList, ViewProject };

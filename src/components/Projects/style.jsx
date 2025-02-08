@@ -2,8 +2,12 @@ import styled from "styled-components";
 
 const ProjectsContainer = styled.div`  
     color: var(--white-color);
-    padding: 3rem 2.5rem;
+    padding: 3rem 0;
     position: relative;
+    
+    @media(1280px <= width) {
+        padding: 3rem 10rem;
+    }
 `;
 
 const InputGroup = styled.div`
