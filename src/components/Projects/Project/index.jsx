@@ -22,7 +22,7 @@ function Project({ project }) {
                     }
                 </ViewProject>
             </Description>
-            <img src={project.imageUrl} alt="previw de projeto" />
+            <img src={project.imageUrl} alt="preview de projeto" />
         </ProjectContainer>
     );
 }
