@@ -16,7 +16,7 @@ import { ProjectsContainer, Content } from './style';
 function Projects() {
     const [projects, setProjects] = useState([]);
 
-    const apiProjects = 'https://json-server-projects.vercel.app/projects';
+    const apiProjects = 'https://json-server-max.vercel.app/projects';
 
     useEffect(() => {
         const getDataProjects = async () => {
