@@ -17,7 +17,9 @@ const SocialIconsContainer = styled.div`
     }
 
     @media (1025px <= width) {
-        margin-top: 0.7rem;
+        img {
+            margin-top: 0.4rem;
+        }
     }
 `;
 

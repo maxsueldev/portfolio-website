@@ -13,7 +13,7 @@ const IntroContainer = styled.div`
     }
 `;
 
-const InfosProfile = styled.div`;
+const InfosProfile = styled.div`
     display: var(--flex-display);
     flex-direction: column;
     justify-content: center;
@@ -36,9 +36,18 @@ const InfosProfile = styled.div`;
     }
 
     @media (1025px <= width) {
-        width: 25%;
+        width: 45%;
+
+        h1 {
+            font-size: 2.8rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
     }
 `;
+
 
 const Photo = styled.img`
     width: 10rem;
@@ -46,6 +55,10 @@ const Photo = styled.img`
 
     @media(768px <= width) {
         width: 12rem;
+    }
+
+    @media(1025px <= width) {
+        width: 14rem;
     }
 `;
 
@@ -72,7 +85,12 @@ const BtnCurriculo = styled.div`
     margin-top: 2rem;
 
     @media (1025px <=width) {
-        font-size: 1rem;
+        margin-top: 2.5rem;
+        
+        a {
+            font-size: 1.3rem;
+            padding: .4rem 1.8rem;
+        }
     }
 `;
 
