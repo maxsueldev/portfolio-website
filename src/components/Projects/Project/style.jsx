@@ -58,6 +58,11 @@ const Description = styled.div`
 
     @media(1280px <= width) {
         width: 40%;
+
+        p {
+            font-size: 1.25rem;
+            line-height: 1.8rem;
+        }
     }
 `;
 
@@ -80,9 +85,13 @@ const ViewProject = styled.div`
     gap: 1rem;
     margin-top: 1rem;
 
-    img {
-        width: 3rem;
+    svg {
+        font-size: 2.6rem;
         cursor: pointer;
+    }
+
+    svg:hover {
+        color: var(--red-color);
     }
 `;
 

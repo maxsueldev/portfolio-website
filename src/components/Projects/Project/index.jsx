@@ -1,5 +1,4 @@
-import eyeView from '/assets/projects/eye.svg';
-import githubView from '/assets/projects/github.svg';
+import { FaGithub, FaRegEye } from "react-icons/fa6";
 
 import { ProjectContainer, Description, TechsList, ViewProject } from "./style";
 
@@ -16,9 +15,9 @@ function Project({ project }) {
                 </TechsList>
                 <ViewProject>
                     {project.homepage &&
-                        <a href={project.homepage} target='_blank'><img src={eyeView} alt="visite page" /></a>
+                        <a href={project.homepage} target='_blank'>{<FaRegEye />}</a>
                     } {project.codeUrl &&
-                        <a href={project.codeUrl} target='_blank'><img src={githubView} alt="github code" /></a>
+                        <a href={project.codeUrl} target='_blank'>{<FaGithub />}</a>
                     }
                 </ViewProject>
             </Description>
