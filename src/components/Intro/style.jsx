@@ -9,7 +9,6 @@ const IntroContainer = styled.div`
 
     @media(768px <= width) {
         flex-direction: row;
-        gap: 2rem;
     }
 `;
 
@@ -36,7 +35,7 @@ const InfosProfile = styled.div`
     }
 
     @media (1025px <= width) {
-        width: 45%;
+        width: 35%;
 
         h1 {
             font-size: 2.5rem;
@@ -58,7 +57,6 @@ const Photo = styled.img`
     }
 
     @media(1025px <= width) {
-        width: 12rem;
         border-radius: 8rem;
     }
 `;

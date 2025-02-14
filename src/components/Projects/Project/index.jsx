@@ -21,7 +21,7 @@ function Project({ project }) {
                     }
                 </ViewProject>
             </Description>
-            <img src={project.imageUrl} alt="preview de projeto" />
+            <a href={project.homepage} target='_blank'><img src={project.imageUrl} alt="preview de projeto" /></a>
         </ProjectContainer>
     );
 }
