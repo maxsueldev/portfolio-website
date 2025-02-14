@@ -26,7 +26,7 @@ const LanguageIconsContainer = styled.div`
 
     @media (1025px <= width) {
         img {
-            width: 9%;    
+            width: 7%;    
         }
     }
 `;

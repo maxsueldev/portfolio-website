@@ -39,11 +39,11 @@ const InfosProfile = styled.div`
         width: 45%;
 
         h1 {
-            font-size: 2.8rem;
+            font-size: 2.5rem;
         }
 
         p {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
         }
     }
 `;
@@ -58,7 +58,8 @@ const Photo = styled.img`
     }
 
     @media(1025px <= width) {
-        width: 14rem;
+        width: 12rem;
+        border-radius: 8rem;
     }
 `;
 
@@ -88,8 +89,8 @@ const BtnCurriculo = styled.div`
         margin-top: 2.5rem;
         
         a {
-            font-size: 1.3rem;
-            padding: .4rem 1.8rem;
+            font-size: 1rem;
+            padding: .7rem 1.8rem;
         }
     }
 `;

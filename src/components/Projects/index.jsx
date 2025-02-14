@@ -32,12 +32,15 @@ function Projects() {
             <ProjectsContainer id="projects">
                 <h1>Projetos Principais</h1>
                 <Swiper
+                    style={{
+                        '--swiper-navigation-color': 'var(--red-color)',
+                    }}
                     modules={[Navigation]}
                     spaceBetween={50}
                     slidesPerView={1}
                     navigation
-                    // pagination={{ clickable: true }}
-                    // scrollbar={{ draggable: true }}
+                // pagination={{ clickable: true }}
+                // scrollbar={{ draggable: true }}
                 >
                     {projects.map(project => (
                         <SwiperSlide key={project.id}>

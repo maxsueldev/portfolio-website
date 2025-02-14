@@ -13,13 +13,14 @@ const AboutContainer = styled.div`
         letter-spacing: 0.063rem;
         line-height: 1.7rem;
         color: var(--black-color);
+        margin-top: 1.6rem;
     }
 
     @media (768px <= width) {
         padding: 4rem 6rem;
 
         h1 {
-            margin-bottom: 0.5rem;
+            margin-bottom: 3rem;
             text-align: center;
         }
     }
@@ -30,7 +31,7 @@ const AboutContainer = styled.div`
         p  {
             font-size: 1.12rem;
             line-height: 1.85rem;
-            margin-top: 1.6rem;
+            margin-top: 2rem;
         }
     }
 `;
