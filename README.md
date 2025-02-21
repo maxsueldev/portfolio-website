@@ -8,6 +8,25 @@
 
 > Sou desenvolvedor front-end com foco em criar interfaces rápidas e responsivas usando React. Neste portfólio, compartilho alguns dos meus projetos. Trabalho com boas práticas de usabilidade e performance, sempre buscando oferecer uma experiência de usuário de qualidade.
 
-## 💻 Pré-requisitos
+## 📋 Pré-requisitos
+
+[NodeJS](https://nodejs.org/pt) - Ambiente de execução JavaScript no lado do servidor, baseado no V8, que permite criar aplicações rápidas e escaláveis
+
+## ⚙️ Executando o projeto
+
+```
+git clone https://github.com/maxsueldev/portfolio-website.git
+```
+
+Abra a raiz do projeto e execute
+
+```
+npm install
+```
+
+```
+npm run dev
+```
+
 
 
