@@ -12,6 +12,7 @@
 
 <p>[NodeJS](https://nodejs.org/pt) - Ambiente de execução JavaScript no lado do servidor, baseado no V8, que permite criar aplicações rápidas e escaláveis</p>
 <br>
+
 ## ⚙️ Executando o projeto
 
 ```
