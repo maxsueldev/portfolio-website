@@ -11,14 +11,14 @@
 ## 📋 Pré-requisitos
 
 [NodeJS](https://nodejs.org/pt) - Ambiente de execução JavaScript no lado do servidor, baseado no V8, que permite criar aplicações rápidas e escaláveis
-
+<br>
 ## ⚙️ Executando o projeto
 
 ```
 git clone https://github.com/maxsueldev/portfolio-website.git
 ```
 
-Abra a raiz do projeto e execute
+<p>Abra a raiz do projeto e execute</p>
 
 ```
 npm install
