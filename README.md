@@ -31,13 +31,13 @@
 git clone https://github.com/maxsueldev/portfolio-website.git
 ```
 
-<p>Abra a raiz do projeto e execute: </p>
+* Abra a raiz do projeto e execute: 
 
 ```
 npm install
 ```
 
-<p>E em seguida: </p>
+* E em seguida: 
 
 ```
 npm run dev
