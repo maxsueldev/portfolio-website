@@ -16,11 +16,11 @@
 
 
 ## 🛠️ Construído com
-[React](https://pt-br.react.dev/) - Biblioteca JavaScript para construção de interfaces de usuário interativas e dinâmicas;
-[Styled-Components](https://styled-components.com/) - Biblioteca para estilização de componentes em React usando CSS dentro de JavaScript;
-[Axios](https://axios-http.com/ptbr/docs/intro) - Biblioteca JavaScript para fazer requisições HTTP, simplificando a comunicação com APIs;
-[SwiperJS](https://swiperjs.com/) - Biblioteca para criar sliders e carrosséis responsivos e touch-friendly em sites e aplicativos;
-[React Icons](https://react-icons.github.io/react-icons/) - Biblioteca que oferece ícones personalizáveis para projetos em React, facilitando a integração de ícones vetoriais.
+* [React](https://pt-br.react.dev/) - Biblioteca JavaScript para construção de interfaces de usuário interativas e dinâmicas;
+* [Styled-Components](https://styled-components.com/) - Biblioteca para estilização de componentes em React usando CSS dentro de JavaScript;
+* [Axios](https://axios-http.com/ptbr/docs/intro) - Biblioteca JavaScript para fazer requisições HTTP, simplificando a comunicação com APIs;
+* [SwiperJS](https://swiperjs.com/) - Biblioteca para criar sliders e carrosséis responsivos e touch-friendly em sites e aplicativos;
+* [React Icons](https://react-icons.github.io/react-icons/) - Biblioteca que oferece ícones personalizáveis para projetos em React, facilitando a integração de ícones vetoriais.
 <br>
 
 
