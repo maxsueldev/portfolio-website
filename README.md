@@ -2,7 +2,6 @@
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/maxsueldev/portfolio-website?style=for-the-badge)
 ![GitHub language count](https://img.shields.io/github/languages/count/maxsueldev/portfolio-website?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/maxsueldev/portfolio-website?style=for-the-badge)
 
 <img src="portfolio-maxsuel.png" alt="Exemplo imagem">
 
@@ -43,5 +42,9 @@ npm install
 npm run dev
 ```
 
+<br>
+
+## JSON Server API
+* https://json-server-max.vercel.app/projects
 
 
