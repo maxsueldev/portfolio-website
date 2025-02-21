@@ -13,8 +13,8 @@
 ## 📋 Pré-requisitos
 
 [NodeJS](https://nodejs.org/pt) - Ambiente de execução JavaScript no lado do servidor, que permite criar aplicações rápidas e escaláveis
-<br>
 
+<br>
 
 ## 🛠️ Construído com
 * [React](https://pt-br.react.dev/) - Biblioteca JavaScript para construção de interfaces de usuário interativas e dinâmicas;
