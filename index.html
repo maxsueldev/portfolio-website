@@ -1,34 +1,52 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./src/img/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="./src/img/favicon.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- META OG -->
+    <meta property="og:url" content="https://portfolio-maxsuel.vercel.app/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Portfólio Maxsuel Fernando" />
+    <meta property="og:site_name" content="maxsuelfernando" />
+    <meta
+      property="og:description"
+      content="Portfólio profissional desenvolvido com ReactJS"
+    />
+    <meta
+      property="og:image"
+      content="https://portfolio-maxsuel.vercel.app/src/img/logoM.png"
+    />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="800" />
+    <meta property="og:image:height" content="600" />
 
-  <!-- META OG -->
-  <meta property="og:url" content="https://portfolio-maxsuel.vercel.app/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Portfólio Maxsuel Fernando" />
-  <meta property="og:site_name" content="maxsuelfernando">
-  <meta property="og:description" content="Portfólio profissional desenvolvido com ReactJS" />
-  <meta property="og:image" content="https://portfolio-maxsuel.vercel.app/src/img/logoM.png" />
-  <meta property="og:image:type" content="image/png">
-  <meta property="og:image:width" content="800">
-  <meta property="og:image:height" content="600">
+    <title>Maxsuel Fernando - Front-end Developer</title>
+  </head>
 
-  <title>Maxsuel Fernando - Front-end Developer</title>
-</head>
+  <body>
+    <!-- TRADUTOR -->
+    <div class="gtranslate_wrapper"></div>
+    <script>
+      window.gtranslateSettings = {
+        default_language: "pt",
+        native_language_names: true,
+        detect_browser_language: true,
+        languages: ["pt", "en", "es"],
+        wrapper_selector: ".gtranslate_wrapper",
+        switcher_horizontal_position: "right",
+        switcher_vertical_position: "bottom",
+        alt_flags: { pt: "brazil" },
+      };
+    </script>
+    <script
+      src="https://cdn.gtranslate.net/widgets/latest/float.js"
+      defer
+    ></script>
+    <!-- *** -->
 
-<body>
-  <!-- TRADUTOR -->
-  <div class="gtranslate_wrapper"></div>
-  <script>window.gtranslateSettings = { "default_language": "pt", "native_language_names": true, "detect_browser_language": true, "languages": ["pt", "en", "es"], "wrapper_selector": ".gtranslate_wrapper", "switcher_horizontal_position": "right", "switcher_vertical_position": "bottom", "alt_flags": { "pt": "brazil" } }</script>
-  <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
-  <!-- *** -->
-
-  <div id="root"></div>
-  <script type="module" src="/src/main.jsx"></script>
-</body>
-
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>

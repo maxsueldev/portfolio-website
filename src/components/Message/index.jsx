@@ -28,7 +28,7 @@ function Message() {
 
     return (
         <MessageContainer id="message">
-            <h1>Contate-me</h1>
+            <h2>Contate-me</h2>
             <p>Entre em contato diretamente por 
                 <a href="mailto:maxsuel.dev@gmail.com"> maxsuel.dev@gmail.com</a> ou através deste formulário</p>
             <form onSubmit={sendEmail}>

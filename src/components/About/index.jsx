@@ -3,7 +3,7 @@ import { AboutContainer } from './style';
 function About() {
     return (
         <AboutContainer id="about">
-            <h1>Sobre mim</h1>
+            <h2>Sobre mim</h2>
             <p>Sempre fui apaixonado por tecnologia desde pequeno. Lembro-me de passar horas explorando computadores e tentando entender
                 como funcionavam, o que me despertou o interesse por informática de maneira natural. À medida que fui crescendo, meu
                 fascínio por esse universo só aumentou, e foi durante meus estudos que descobri minha

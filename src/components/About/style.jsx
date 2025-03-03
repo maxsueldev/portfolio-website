@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
-const AboutContainer = styled.div`
+const AboutContainer = styled.section`
     background-color: var(--grey-bg-color);
-    padding: 3rem 4rem;
+    padding: 3rem;
 
-    h1 {
+    h2 {
         color: var(--red-color);
+        text-align: center;
         margin-bottom: 1rem;
     }
 
@@ -17,9 +18,9 @@ const AboutContainer = styled.div`
     }
 
     @media (768px <= width) {
-        padding: 4rem 6rem;
+        padding: 3rem 6rem;
 
-        h1 {
+        h2 {
             margin-bottom: 3rem;
             text-align: center;
         }

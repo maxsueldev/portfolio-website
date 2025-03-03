@@ -5,9 +5,9 @@ import { SkillsContainer, FrontEnd, TechsFrontEnd } from './style';
 function Skills() {
     return (
         <SkillsContainer id="skills">
-            <h1>Habilidades</h1>
+            <h2>Habilidades</h2>
             <FrontEnd>
-                <h2>Front-End</h2>
+                <h3>Front-End</h3>
                 <TechsFrontEnd>
                     <div>
                         <Skill title='HTML' percentContent='85%' />
@@ -23,7 +23,7 @@ function Skills() {
                 </TechsFrontEnd>
             </FrontEnd>
             <div className="design">
-                <h2>Design</h2>
+                <h3>Design</h3>
                 <Skill title='Figma' percentContent='75%' />
                 <Skill title='Photoshop' percentContent='30%' />
             </div>

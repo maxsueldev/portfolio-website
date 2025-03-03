@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const ExperiencesContainer = styled.div`
+const ExperiencesContainer = styled.section`
     display: flex;
     flex-direction: column;
     gap: 1.8rem;
@@ -9,9 +9,9 @@ const ExperiencesContainer = styled.div`
     padding: 3rem 2.5rem;
     position: relative;
 
-    h1 {
+    h2 {
         text-align: center;
     }
-`;
+`;  
 
 export { ExperiencesContainer };

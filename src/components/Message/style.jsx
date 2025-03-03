@@ -9,14 +9,15 @@ const MessageContainer = styled.div`
     padding: 3rem 2.5rem;
     height: 100%;
 
-    h1 {
+    h2 {
         color: var(--red-color);
         text-align: center;
         margin-bottom: .4rem;
     }
 
     p {
-        font-size: 0.9rem;
+        font-size: 1rem;
+        line-height: 1.4rem;
     }
 
     a {

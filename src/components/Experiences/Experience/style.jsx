@@ -5,10 +5,6 @@ const ExperienceContainer = styled.div`
     flex-direction: column;
     gap: 0.4rem;
 
-    p {
-        font-size: 0.8rem;
-    }
-
     @media (768px <= width) {
         flex-direction: row;
         justify-content: center;
@@ -18,7 +14,7 @@ const ExperienceContainer = styled.div`
         padding-left: 4rem;
 
         .content {
-            width: 30%;
+            width: 70%;
             border: 2px solid var(--gray-color);
             border-radius: 0.4rem;
             padding: 1rem 0.5rem;
@@ -27,6 +23,7 @@ const ExperienceContainer = styled.div`
 `;
 
 const Title = styled.p`
+    font-size: 1rem;
     font-weight: bold;
     margin-bottom: 0.1rem;
 `;
@@ -37,22 +34,26 @@ const Local = styled.p`
 `;
 
 const Description = styled.p`
+    line-height: 1.4rem;
     margin-top: 0.5rem;
 `;
 
 const ImageWork = styled.div`
     display: none;
     position: absolute;
-    left: 50%;
+    left: 70%;
 
     @media (768px <= width) {
         display: block;
     }
-`;
+
+    @media(1025px <= width) {
+        left: 75%;
+    }
+`;  
 
 const Date = styled.div`
     font-style: italic;
-    width: 36%;
 `;
 
 export { ExperienceContainer, Title, Local, Description, ImageWork, Date };

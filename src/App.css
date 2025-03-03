@@ -1,12 +1,12 @@
 /* Dark Mode */
 
-.darkModeIcon {
+/* .darkModeIcon {
     position: fixed;
     bottom: 6%;
     left: 3.5%;
     cursor: pointer;
     z-index: 3;
-}
+} */
 
 /* @media (768px <= width) { 
     .introAboutContainer {

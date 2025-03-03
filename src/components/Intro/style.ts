@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const IntroContainer = styled.div`
+const IntroContainer = styled.section`
     display: var(--flex-display);
     flex-direction: column;
     justify-content: center;
@@ -9,6 +9,11 @@ const IntroContainer = styled.div`
 
     @media(768px <= width) {
         flex-direction: row;
+        gap: 1rem;
+    }
+
+    @media(1280px <= width) {
+        gap: 0;
     }
 `;
 
@@ -21,12 +26,11 @@ const InfosProfile = styled.div`
     gap: 0.2rem;
 
     h1 {
-        font-size: 1.8rem;
         margin-top: 1rem;
     }
 
     p {
-        font-size: 0.938rem;
+        font-size: 1rem;
         font-weight: 100;
     }
 
@@ -35,14 +39,12 @@ const InfosProfile = styled.div`
     }
 
     @media (1025px <= width) {
-        width: 35%;
-
         h1 {
-            font-size: 2.5rem;
+            font-size: 2rem;
         }
 
         p {
-            font-size: 1.3rem;
+            font-size: 1.15rem;
         }
     }
 `;

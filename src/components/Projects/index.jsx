@@ -30,13 +30,13 @@ function Projects() {
     return (
         <>
             <ProjectsContainer id="projects">
-                <h1>Projetos Principais</h1>
+                <h2>Projetos Principais</h2>
                 <Swiper
                     style={{
                         '--swiper-navigation-color': 'var(--red-color)',
                     }}
                     modules={[Navigation]}
-                    spaceBetween={50}
+                    spaceBetween={80}
                     slidesPerView={1}
                     navigation
                 // pagination={{ clickable: true }}

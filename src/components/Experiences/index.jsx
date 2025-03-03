@@ -5,7 +5,7 @@ import { ExperiencesContainer } from './style';
 function Experiences() {
     return (
         <ExperiencesContainer id="experiences">
-            <h1>Experiências</h1>
+            <h2>Experiências</h2>
             <Experience title='CEO' local='Update Personalizados' date='Out 2020 - Dez 2024'/>
             <Experience title='Professor de Informática Básica' local='EJA - Penedo/AL' date='Abr 2022 - Dez 2022'/>
             <Experience title='Estagiário de Suporte Técnico' local='SERVEAL - Maceió/AL' date='Dez 2015 - Nov 2016'/>

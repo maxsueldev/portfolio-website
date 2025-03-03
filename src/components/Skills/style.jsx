@@ -1,20 +1,24 @@
 import styled from "styled-components";
 
-const SkillsContainer = styled.div`
+const SkillsContainer = styled.section`
     color: var(--black-color);
     background-color: var(--grey-bg-color);
     padding: 3rem 2.5rem;
 
-    h1 {
+    h2 {
         color: var(--red-color);
         text-align: center;
         margin-bottom: 2rem;
     }
 
+    h3 {
+        text-align: center;
+    }
+
     @media (768px <= width) {
         padding: 4rem 6rem;
         
-        h2 {
+        h3 {
             text-align: center;
         }
 
