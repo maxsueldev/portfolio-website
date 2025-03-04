@@ -2,14 +2,14 @@ import { FaGithub, FaRegEye } from "react-icons/fa6";
 
 import { ProjectContainer, Description, TechsList, ViewProject } from "./style";
 
-function Project({ project }) {
+function Project({ project }: any) {
     return (
         <ProjectContainer>
             <Description>
                 <h3>{project.name}</h3>
                 <p>{project.description}</p>
                 <TechsList>
-                    {project.techs.map((tech, index) => (
+                    {project.techs.map((tech: string, index: number) => (
                         <li key={index}>{tech}</li>
                     ))}
                 </TechsList>

@@ -11,10 +11,21 @@ import axios from 'axios';
 
 import Project from './Project';
 
+import { CSSProperties } from 'styled-components';
 import { ProjectsContainer, Content } from './style';
 
+interface IProjectProps {
+    id: number,
+    name: string,
+    description: string,
+    techs: string[],
+    homepage: string,
+    codeUrl: string,
+    imageUrl: string
+}
+
 function Projects() {
-    const [projects, setProjects] = useState([]);
+    const [projects, setProjects] = useState<IProjectProps[]>([]);
 
     const apiProjects = 'https://json-server-max.vercel.app/projects';
 
@@ -34,7 +45,7 @@ function Projects() {
                 <Swiper
                     style={{
                         '--swiper-navigation-color': 'var(--red-color)',
-                    }}
+                    } as CSSProperties}
                     modules={[Navigation]}
                     spaceBetween={80}
                     slidesPerView={1}

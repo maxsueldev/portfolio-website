@@ -2,7 +2,14 @@ import workImage from '/assets/experiences/work.svg';
 
 import { ExperienceContainer, Title, Local, Description, ImageWork, Date } from './style';
 
-function Experience({title, local, description='', date}) {
+interface IExperienceProps {
+    title: string,
+    local: string,
+    description?: string,
+    date: string
+}
+
+function Experience({title, local, description='', date}: IExperienceProps) {
     return (
         <ExperienceContainer>
             <div className='content'>

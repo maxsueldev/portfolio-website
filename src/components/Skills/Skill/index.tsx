@@ -1,6 +1,11 @@
 import { SkillContainer, ContentBox } from './style';
 
-function Skill({title, percentContent}) {
+interface ISkillProps {
+    title: string,
+    percentContent: string
+}
+
+function Skill({title, percentContent}: ISkillProps) {
     return (
         <SkillContainer>
             <p>{title}</p>

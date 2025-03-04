@@ -20,6 +20,12 @@ const ExperienceContainer = styled.div`
             padding: 1rem 0.5rem;
         }
     }
+
+    @media(1025px <= width) {
+        .content {
+            width: 50%;
+        }
+    }
 `;
 
 const Title = styled.p`
@@ -41,14 +47,18 @@ const Description = styled.p`
 const ImageWork = styled.div`
     display: none;
     position: absolute;
-    left: 70%;
+    left: 72%;
 
     @media (768px <= width) {
         display: block;
     }
 
-    @media(1025px <= width) {
-        left: 75%;
+    @media (1025px <= width) {
+        left: 67%;
+    }
+
+    @media (1280px <= width) {
+        left: 70%;
     }
 `;  
 

@@ -1,10 +1,10 @@
 import {ListaMenu } from './style';
 
-interface ListaMenuMobileProps {
+interface IListaMenuMobileProps {
     isOpen: boolean
 }
 
-function ListaMenuMobile({ isOpen  }: ListaMenuMobileProps) {
+function ListaMenuMobile({ isOpen  }: IListaMenuMobileProps) {
     if(isOpen) {
         return (
             <ListaMenu>

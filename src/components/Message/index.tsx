@@ -7,7 +7,7 @@ function Message() {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
 
-    function sendEmail(e) {
+    function sendEmail(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault();
 
         const templateParams = {

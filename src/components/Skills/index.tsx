@@ -13,10 +13,10 @@ function Skills() {
                         <Skill title='HTML' percentContent='85%' />
                         <Skill title='CSS' percentContent='85%' />
                         <Skill title='JavaScript' percentContent='85%' />
-                        <Skill title='React' percentContent='50%' />
+                        <Skill title='React' percentContent='55%' />
                     </div>
                     <div>
-                        <Skill title='TypeScript' percentContent='15%' />
+                        <Skill title='TypeScript' percentContent='25%' />
                         <Skill title='SASS' percentContent='30%' />
                         <Skill title='GIT' percentContent='50%' />
                     </div>

@@ -64,7 +64,7 @@ const Description = styled.div`
     }
 `;
 
-const TechsList = styled.li`
+const TechsList = styled.ul`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

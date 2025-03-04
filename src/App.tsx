@@ -1,13 +1,13 @@
 // Components
-import Header from './components/Header/index';
-import LateralNavbar from './components/LateralNavbar/index';
-import Intro from './components/Intro/index';
-import About from './components/About/index';
-import Projects from './components/Projects/index';
-import Skills from './components/Skills/index';
-import Experiences from './components/Experiences/index';
-import Message from './components/Message/index';
-import Footer from './components/Footer/index';
+import Header from './components/Header';
+import LateralNavbar from './components/LateralNavbar';
+import Intro from './components/Intro';
+import About from './components/About';
+import Projects from './components/Projects/index.tsx';
+import Skills from './components/Skills';
+import Experiences from './components/Experiences';
+import Message from './components/Message';
+import Footer from './components/Footer';
 
 import './App.css';
 
