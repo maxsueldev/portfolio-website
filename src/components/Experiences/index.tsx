@@ -7,7 +7,7 @@ function Experiences() {
     <ExperiencesContainer id="experiences">
       <h2>Experiências</h2>
       <Experience
-        title="CEO"
+        title="Empreendedor"
         local="Update Personalizados"
         description="Empreendimento de sublimação de artigos personalizados como canecas e camisetas onde desenvolvi algumas habilidades comportamentais como linguagem corporal e inteligência emocional."
         date="Out 2020 - Dez 2024"
