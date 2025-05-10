@@ -13,11 +13,12 @@ function Skills() {
             <Skill title="HTML" percentContent="85%" />
             <Skill title="CSS" percentContent="85%" />
             <Skill title="JavaScript" percentContent="85%" />
-            <Skill title="React" percentContent="55%" />
+            <Skill title="React" percentContent="60%" />
           </div>
           <div>
-            <Skill title="TypeScript" percentContent="25%" />
-            <Skill title="SASS" percentContent="30%" />
+            <Skill title="TypeScript" percentContent="60%" />
+            <Skill title="SASS" percentContent="60%" />
+            <Skill title="Tailwind" percentContent="40%" />
             <Skill title="GIT" percentContent="50%" />
           </div>
         </TechsFrontEnd>
