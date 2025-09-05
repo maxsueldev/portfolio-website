@@ -30,9 +30,7 @@ function Intro() {
           <Languages>
             <LanguageIcons />
             <BtnCurriculo>
-              <a href={curriculumVitae} download>
-                Meu currículo
-              </a>
+              <a href="#projects">Meus projetos</a>
             </BtnCurriculo>
           </Languages>
         </InfosProfile>

@@ -44,6 +44,8 @@ const LinkSection = styled.a`
       transition: color 1s ease;
       display: flex;
       justify-content: center;
+      align-items: center;
+      margin-left: 0.4rem;
     }
 
     svg {
@@ -65,14 +67,6 @@ const LinkSection = styled.a`
   @media (1025px <= width) {
     span {
       display: none;
-    }
-  }
-
-  @media (1280px <= width) {
-    &:hover {
-      span {
-        display: none;
-      }
     }
   }
 `;
