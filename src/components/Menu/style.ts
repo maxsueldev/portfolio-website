@@ -4,7 +4,6 @@ const MenuNavegation = styled.div`
   position: absolute;
   bottom: 1rem;
   display: none;
-  //   flex-direction: column;
   margin-top: 6rem;
   gap: 1rem;
 
@@ -13,9 +12,21 @@ const MenuNavegation = styled.div`
     display: flex;
   }
 
-  @media (1025px >= width) {
-    margin: 0;
+  @media (1025px <= width) {
+    flex-direction: column;
+    gap: 2.6rem;
+    left: 3.6rem;
+    bottom: 6rem;
     padding: 0;
+    margin: 0;
+  }
+
+  @media (1280px <= width) {
+    flex-direction: row;
+    left: 0;
+    bottom: 0;
+    justify-content: center;
+    position: relative;
   }
 `;
 
@@ -28,19 +39,16 @@ const LinkSection = styled.a`
   }
 
   &:hover {
-    p {
+    span {
       color: var(--tertiary-color);
       transition: color 1s ease;
+      display: flex;
+      justify-content: center;
     }
 
     svg {
       fill: var(--tertiary-color);
       transition: fill 1s ease;
-    }
-
-    span {
-      display: flex;
-      justify-content: center;
     }
   }
 
@@ -55,7 +63,17 @@ const LinkSection = styled.a`
   }
 
   @media (1025px <= width) {
-    display: inline;
+    span {
+      display: none;
+    }
+  }
+
+  @media (1280px <= width) {
+    &:hover {
+      span {
+        display: none;
+      }
+    }
   }
 `;
 

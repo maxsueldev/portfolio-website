@@ -1,4 +1,4 @@
-import { LinkSection, MenuNavegation } from "../Menu/style";
+import { MenuNavegation, LinkSection } from "../Menu/style";
 
 const Menu = () => {
   return (
