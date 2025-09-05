@@ -13,9 +13,7 @@ function App() {
   return (
     <div className="App">
       {/* <Header /> */}
-      <div className="lateralMenu">
-        <LateralNavbar />
-      </div>
+      <div className="lateralMenu">{/* <LateralNavbar /> */}</div>
       <div className="main">
         <Intro />
         <About />

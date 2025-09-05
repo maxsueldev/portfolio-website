@@ -1,15 +1,30 @@
 import styled from "styled-components";
 
-const IntroContainer = styled.section`
+const Container = styled.section`
   display: var(--flex-display);
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  padding: 4rem;
+
+  @media (768px <= width) {
+    height: 100vh;
+  }
+`;
+
+const IntroContainer = styled.div`
+  display: var(--flex-display);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   @media (768px <= width) {
     flex-direction: row;
-    gap: 1rem;
+    gap: 4rem;
+  }
+
+  @media (1025px <= width) {
+    height: 100vh;
   }
 
   @media (1280px <= width) {
@@ -91,4 +106,11 @@ const BtnCurriculo = styled.div`
   }
 `;
 
-export { IntroContainer, InfosProfile, Photo, Languages, BtnCurriculo };
+export {
+  Container,
+  IntroContainer,
+  InfosProfile,
+  Photo,
+  Languages,
+  BtnCurriculo,
+};
