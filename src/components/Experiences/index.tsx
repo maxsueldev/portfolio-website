@@ -16,7 +16,7 @@ function Experiences() {
         title="Professor de Informática Básica"
         local="EJA - Penedo/AL"
         description="Uma das melhores satisfações da minha vida. Para Paulo Freire, ensinar é ter a oportunidade de transmitir conhecimento e ao mesmo tempo de aprender com quem ensinamos. Aprendi muito com meus alunos EJA de Penedo."
-        date="Abr 2022 - Dez 2022"
+        date="Abr 2024 - Dez 2024"
       />
       <Experience
         title="Operador de Caixa"
