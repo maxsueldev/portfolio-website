@@ -1,11 +1,11 @@
 import Experience from "./Experience";
 
-import { ExperiencesContainer } from "./style";
+import styles from "./Experiences.module.css";
 
 function Experiences() {
   return (
-    <ExperiencesContainer id="experiences">
-      <h2>Experiências</h2>
+    <section className={styles.experiencesContainer} id="experiences">
+      <h2 className={styles.title}>Experiências</h2>
       <Experience
         title="Empreendedor"
         local="Update Personalizados"
@@ -42,7 +42,7 @@ function Experiences() {
         description="Suporte interno aos usuários; suporte externo aos administradores dos mercados os quais esta secretaria tem acordo; instalação e manutenção de computadores; configuração, monitoramento e suporte à redes; instalação e configuração de impressoras; impressões de provas e documentos para a empresa AlmaViva; Instalação, configuração e suporte com sistemas Windows e Linux; utilização e configuração dos firewalls Zentyal e BrazilFW."
         date="Nov 2013 - Out 2015"
       />
-    </ExperiencesContainer>
+    </section>
   );
 }
 

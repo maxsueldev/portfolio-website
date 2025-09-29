@@ -1,19 +1,19 @@
 import { FaGithub, FaRegEye } from "react-icons/fa6";
 
-import { ProjectContainer, Description, TechsList, ViewProject } from "./style";
+import styles from "./Project.module.css";
 
 function Project({ project }: any) {
   return (
-    <ProjectContainer>
-      <Description>
+    <div className={styles.projectContainer}>
+      <div className={styles.description}>
         <h3>{project.name}</h3>
         <p>{project.description}</p>
-        <TechsList>
+        <ul className={styles.techsList}>
           {project.techs.map((tech: string, index: number) => (
             <li key={index}>{tech}</li>
           ))}
-        </TechsList>
-        <ViewProject>
+        </ul>
+        <div className={styles.viewProject}>
           {project.homepage && (
             <a href={project.homepage} target="_blank">
               {<FaRegEye />}
@@ -24,15 +24,15 @@ function Project({ project }: any) {
               {<FaGithub />}
             </a>
           )}
-        </ViewProject>
-      </Description>
+        </div>
+      </div>
       <a
         href={project.homepage ? project.homepage : "#projects"}
         target={project.homepage ? "_blank" : "_self"}
       >
         <img src={project.imageUrl} alt="preview de projeto" />
       </a>
-    </ProjectContainer>
+    </div>
   );
 }
 

@@ -1,4 +1,4 @@
-import { ExperienceContainer, Title, Local, Description, Date } from "./style";
+import styles from "./Experience.module.css";
 
 interface IExperienceProps {
   title: string;
@@ -14,16 +14,16 @@ function Experience({
   date,
 }: IExperienceProps) {
   return (
-    <ExperienceContainer>
-      <div className="content">
-        <Title>{title}</Title>
-        <Local>{local}</Local>
-        <Description>{description}</Description>
+    <div className={styles.experienceContainer}>
+      <div className={styles.content}>
+        <p className={styles.title}>{title}</p>
+        <p className={styles.local}>{local}</p>
+        <p className={styles.description}>{description}</p>
       </div>
-      <Date>
+      <div className={styles.date}>
         <p>{date}</p>
-      </Date>
-    </ExperienceContainer>
+      </div>
+    </div>
   );
 }
 

@@ -1,0 +1,16 @@
+.socialIconsContainer {
+  display: var(--flex-display);
+  gap: 1rem;
+  margin: 2rem auto 0 auto;
+}
+
+.socialIconsContainer img:hover {
+  transform: translateY(-50%);
+  transition: transform 0.5s ease;
+}
+
+@media (481px <= width) {
+  .socialIconsContainer img {
+    width: 2rem;
+  }
+}

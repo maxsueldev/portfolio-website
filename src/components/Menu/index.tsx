@@ -1,9 +1,9 @@
-import { MenuNavegation, LinkSection } from "../Menu/style";
+import styles from "./Menu.module.css";
 
 const Menu = () => {
   return (
-    <MenuNavegation>
-      <LinkSection href="#about">
+    <div className={styles.menuNavegation}>
+      <a className={styles.link} href="#about">
         <svg
           fill="#F5F5F5"
           width="52px"
@@ -22,9 +22,9 @@ const Menu = () => {
           </g>
         </svg>
         <span>Sobre</span>
-      </LinkSection>
+      </a>
 
-      <LinkSection href="#projects">
+      <a className={styles.link} href="#projects">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="50px"
@@ -41,9 +41,9 @@ const Menu = () => {
           <path d="M5 4h4l3 3h7a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-11a2 2 0 0 1 2 -2" />
         </svg>
         <span>Projetos</span>
-      </LinkSection>
+      </a>
 
-      <LinkSection href="#experiences">
+      <a className={styles.link} href="#experiences">
         <svg
           fill="#F5F5F5"
           width="54px"
@@ -54,9 +54,9 @@ const Menu = () => {
           <path d="M16 6.28a1.23 1.23 0 0 0-.62-1.07l-6.74-4a1.27 1.27 0 0 0-1.28 0l-6.75 4a1.25 1.25 0 0 0 0 2.15l1.92 1.12v2.81a1.28 1.28 0 0 0 .62 1.09l4.25 2.45a1.28 1.28 0 0 0 1.24 0l4.25-2.45a1.28 1.28 0 0 0 .62-1.09V8.45l1.24-.73v2.72H16V6.28zm-3.73 5L8 13.74l-4.22-2.45V9.22l3.58 2.13a1.29 1.29 0 0 0 1.28 0l3.62-2.16zM8 10.27l-6.75-4L8 2.26l6.75 4z" />
         </svg>
         <span>Experiências</span>
-      </LinkSection>
+      </a>
 
-      <LinkSection href="#message">
+      <a className={styles.link} href="#message">
         <svg
           width="64px"
           height="64px"
@@ -73,8 +73,8 @@ const Menu = () => {
           />
         </svg>
         <span>Contato</span>
-      </LinkSection>
-    </MenuNavegation>
+      </a>
+    </div>
   );
 };
 

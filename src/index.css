@@ -5,9 +5,11 @@
 
   /* PALLET COLLORS */
   --primary-color: #1c1d26;
-  --secondary-color: #c0c0c0;
+  --secondary-color: #2f3140;
   --tertiary-color: #f50000;
-  --quaternary-color: #2a3d66;
+  --quaternary-color: #4f9cff;
+
+  --text-color: #e0e0e0;
 
   --blue-color: #3300ff;
   --gray-color: #f7f7f7;

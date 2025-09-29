@@ -1,0 +1,13 @@
+.experiencesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: 3rem 2.5rem;
+  position: relative;
+}
+
+.title {
+  text-align: center;
+}

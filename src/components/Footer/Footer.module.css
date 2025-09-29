@@ -1,6 +1,4 @@
-import styled from "styled-components";
-
-const FooterContainer = styled.div`
+.footerContainer {
   display: flex;
   justify-content: center;
   gap: 1rem;
@@ -10,6 +8,4 @@ const FooterContainer = styled.div`
   img {
     width: 2rem;
   }
-`;
-
-export { FooterContainer };
+}

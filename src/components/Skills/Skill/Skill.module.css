@@ -1,0 +1,23 @@
+.skillContainer {
+  margin: 0.7rem 0;
+}
+
+.skillContainer p {
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.contentBox {
+  width: 100%;
+  height: 1.2rem;
+  background-color: var(--gray-color);
+  border-radius: 2rem;
+  margin: 0.3rem 0;
+}
+
+.contentBox span {
+  display: block;
+  height: 100%;
+  background-color: var(--tertiary-color);
+  border-radius: 2rem;
+}

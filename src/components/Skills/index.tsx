@@ -1,14 +1,14 @@
 import Skill from "./Skill";
 
-import { SkillsContainer, FrontEnd, TechsFrontEnd } from "./style";
+import styles from "./Skills.module.css";
 
 function Skills() {
   return (
-    <SkillsContainer id="skills">
+    <section className={styles.skillsContainer} id="skills">
       <h2>Habilidades</h2>
-      <FrontEnd>
+      <div className={styles.frontend}>
         <h3>Front-End</h3>
-        <TechsFrontEnd>
+        <div className={styles.techsFrontEnd}>
           <div>
             <Skill title="HTML" percentContent="85%" />
             <Skill title="CSS" percentContent="85%" />
@@ -21,14 +21,14 @@ function Skills() {
             <Skill title="Tailwind" percentContent="40%" />
             <Skill title="GIT" percentContent="50%" />
           </div>
-        </TechsFrontEnd>
-      </FrontEnd>
-      <div className="design">
+        </div>
+      </div>
+      <div className={styles.design}>
         <h3>Design</h3>
         <Skill title="Figma" percentContent="70%" />
         <Skill title="Photoshop" percentContent="30%" />
       </div>
-    </SkillsContainer>
+    </section>
   );
 }
 

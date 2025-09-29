@@ -12,7 +12,7 @@ import axios from "axios";
 import Project from "./Project";
 
 import { CSSProperties } from "styled-components";
-import { ProjectsContainer, Content } from "./style";
+import styles from "./Projects.module.css";
 
 interface IProjectProps {
   id: number;
@@ -40,7 +40,7 @@ function Projects() {
 
   return (
     <>
-      <ProjectsContainer id="projects">
+      <section className={styles.projectsContainer} id="projects">
         <h2>Projetos Principais</h2>
         <Swiper
           style={
@@ -57,13 +57,13 @@ function Projects() {
         >
           {projects.map((project) => (
             <SwiperSlide key={project.id}>
-              <Content>
+              <div className={styles.content}>
                 <Project project={project} />
-              </Content>
+              </div>
             </SwiperSlide>
           ))}
         </Swiper>
-      </ProjectsContainer>
+      </section>
     </>
   );
 }

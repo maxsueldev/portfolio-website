@@ -1,0 +1,58 @@
+.skillsContainer {
+  color: var(--text-color);
+  background-color: var(--secondary-color);
+  padding: 3rem 2.5rem;
+}
+
+.skillsContainer h2 {
+  color: var(--tertiary-color);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.skillsContainer h3 {
+  text-align: center;
+}
+
+@media (768px <= width) {
+  .skillsContainer {
+    padding: 4rem 6rem;
+  }
+
+  .skillsContainer h3 {
+    text-align: center;
+  }
+}
+
+@media (1025px <= width) {
+  .skillsContainer {
+    padding: 4rem 8rem;
+  }
+
+  .design {
+    margin: 0 10rem;
+  }
+
+  .techsFrontEnd {
+    gap: 2.5rem;
+  }
+}
+
+@media (1280px <= width) {
+  .design {
+    margin: 0 15rem;
+  }
+}
+
+.frontend {
+  margin-bottom: 1.2rem;
+}
+
+.techsFrontEnd {
+  display: flex;
+  gap: 1rem;
+}
+
+.techsFrontEnd div {
+  width: 100%;
+}

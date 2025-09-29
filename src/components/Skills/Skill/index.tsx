@@ -1,19 +1,19 @@
-import { SkillContainer, ContentBox } from './style';
+import styles from "./Skill.module.css";
 
 interface ISkillProps {
-    title: string,
-    percentContent: string
+  title: string;
+  percentContent: string;
 }
 
-function Skill({title, percentContent}: ISkillProps) {
-    return (
-        <SkillContainer>
-            <p>{title}</p>
-            <ContentBox>
-                <span style={{width: percentContent}}></span>
-            </ContentBox>
-        </SkillContainer>
-    );
+function Skill({ title, percentContent }: ISkillProps) {
+  return (
+    <div className={styles.skillContainer}>
+      <p>{title}</p>
+      <div className={styles.contentBox}>
+        <span style={{ width: percentContent }}></span>
+      </div>
+    </div>
+  );
 }
 
 export default Skill;

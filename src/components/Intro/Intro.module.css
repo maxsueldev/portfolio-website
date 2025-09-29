@@ -1,0 +1,94 @@
+.container {
+  display: var(--flex-display);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.introContainer {
+  display: var(--flex-display);
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.infosProfile {
+  max-width: 70%;
+  display: var(--flex-display);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--white-color);
+  gap: 0.2rem;
+  margin-left: 2rem;
+}
+
+.infosProfile p {
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+.circleImage {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.photo {
+  width: 10rem;
+}
+
+.btnProjects {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.btnProjects a {
+  background-color: transparent;
+  color: var(--white-color);
+  border-radius: 4px;
+  border: 1px solid var(--white-color);
+  padding: 0.3rem 1.4rem;
+  margin: 1.2rem 0 1rem 0;
+}
+
+@media (768px <= width) {
+  .introContainer {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .circleImage {
+    width: 190px;
+    height: 190px;
+  }
+
+  .photo {
+    width: 12rem;
+  }
+}
+
+@media (1025px <= width) {
+  .infosProfile {
+    align-items: flex-start;
+  }
+
+  .infosProfile p {
+    font-size: 1.3rem;
+  }
+
+  .btnProjects {
+    margin-top: 1.2rem;
+  }
+
+  .btnProjects a {
+    font-size: 1rem;
+    padding: 0.7rem 1.8rem;
+  }
+
+  .btnProjects:hover {
+    transform: scale(1.05);
+    transition: transform 1s ease;
+  }
+}

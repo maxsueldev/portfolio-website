@@ -1,4 +1,3 @@
-import LanguageIcons from "./LanguageIcons";
 import curriculumVitae from "../../curriculo/curriculum-vitae.pdf";
 import Menu from "../Menu";
 // Icons Imports
@@ -7,36 +6,29 @@ import SocialIcons from "./SocialIcons";
 
 import photo from "/assets/intro/photo.jpeg";
 
-import {
-  Container,
-  IntroContainer,
-  InfosProfile,
-  Photo,
-  Languages,
-  BtnCurriculo,
-} from "./style";
+import styles from "./Intro.module.css";
 
 function Intro() {
   return (
-    <Container>
-      <IntroContainer>
-        <Photo src={photo} alt="photo image" />
-        <InfosProfile className="infosProfile">
-          <h1>Maxsuel Fernando</h1>
-          <p>Front-end Developer | JavaScript + React</p>
-
+    <section className={styles.container}>
+      <div className={styles.introContainer}>
+        <div className={styles.circleImage}>
+          <img className={styles.photo} src={photo} alt="photo image" />
+        </div>
+        <div className={styles.infosProfile}>
+          <h1>Olá, eu sou o Maxsuel (Max) ✌</h1>
+          <p className={styles.description}>
+            Desenvolvedor Front-end focado em criar interfaces modernas,
+            responsivas e performáticas.
+          </p>
           <SocialIcons />
 
-          <Languages>
-            <LanguageIcons />
-            <BtnCurriculo>
-              <a href="#projects">Meus projetos</a>
-            </BtnCurriculo>
-          </Languages>
-        </InfosProfile>
-      </IntroContainer>
-      <Menu />
-    </Container>
+          <div className={styles.btnProjects}>
+            <a href="#projects">Meus projetos</a>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 }
 
