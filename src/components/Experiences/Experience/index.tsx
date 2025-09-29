@@ -12,9 +12,10 @@ function Experience({
   local,
   description = "",
   date,
+  ...rest
 }: IExperienceProps) {
   return (
-    <div className={styles.experienceContainer}>
+    <div className={styles.experienceContainer} {...rest}>
       <div className={styles.content}>
         <p className={styles.title}>{title}</p>
         <p className={styles.local}>{local}</p>

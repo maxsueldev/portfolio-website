@@ -40,7 +40,11 @@ function Projects() {
 
   return (
     <>
-      <section className={styles.projectsContainer} id="projects">
+      <section
+        className={styles.projectsContainer}
+        id="projects"
+        data-aos="fade-down"
+      >
         <h2>Projetos Principais</h2>
         <Swiper
           style={

@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
+    "aos": "^2.3.4",
     "axios": "^1.6.8",
     "framer-motion": "^12.23.22",
     "react": "^18.2.0",
@@ -20,6 +21,7 @@
     "swiper": "^11.2.2"
   },
   "devDependencies": {
+    "@types/aos": "^3.0.7",
     "@types/node": "^22.13.8",
     "@types/react": "^18.3.18",
     "@types/react-dom": "^18.3.5",

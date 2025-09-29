@@ -7,7 +7,16 @@ import Experiences from "./components/Experiences";
 import Message from "./components/Message";
 import Footer from "./components/Footer";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+import { useEffect } from "react";
+
 function App() {
+  useEffect(() => {
+    AOS.init({ duration: 1200 });
+  });
+
   return (
     <div className="App">
       <div className="main">
