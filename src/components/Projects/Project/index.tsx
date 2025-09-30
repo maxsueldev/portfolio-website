@@ -1,8 +1,13 @@
 import { FaGithub, FaRegEye } from "react-icons/fa6";
 
 import styles from "./Project.module.css";
+import IProject from "../../../interfaces/IProject";
 
-function Project({ project }: any) {
+interface ProjectProps {
+  project: IProject;
+}
+
+const Project = ({ project }: ProjectProps) => {
   return (
     <div className={styles.projectContainer}>
       <div className={styles.description}>
@@ -34,6 +39,6 @@ function Project({ project }: any) {
       </a>
     </div>
   );
-}
+};
 
 export default Project;

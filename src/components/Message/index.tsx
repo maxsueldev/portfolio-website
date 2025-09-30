@@ -3,7 +3,7 @@ import emailjs from "@emailjs/browser";
 
 import styles from "./Message.module.css";
 
-function Message() {
+const Message = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
@@ -61,6 +61,6 @@ function Message() {
       </form>
     </div>
   );
-}
+};
 
 export default Message;

@@ -1,11 +1,7 @@
+import ISkill from "../../../interfaces/ISkill";
 import styles from "./Skill.module.css";
 
-interface ISkillProps {
-  title: string;
-  percentContent: string;
-}
-
-function Skill({ title, percentContent }: ISkillProps) {
+const Skill = ({ title, percentContent }: ISkill) => {
   return (
     <div className={styles.skillContainer}>
       <p>{title}</p>
@@ -14,6 +10,6 @@ function Skill({ title, percentContent }: ISkillProps) {
       </div>
     </div>
   );
-}
+};
 
 export default Skill;

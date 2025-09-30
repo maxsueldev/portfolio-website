@@ -1,4 +1,5 @@
 .projectsContainer {
+  background-color: var(--secondary-color);
   color: var(--white-color);
   position: relative;
   padding: 3rem 0;

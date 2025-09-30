@@ -9,7 +9,7 @@ import curriculumVitae from "../../../curriculo/curriculum-vitae.pdf";
 
 import styles from "./SocialIcons.module.css";
 
-function SocialIcons() {
+const SocialIcons = () => {
   return (
     <div className={styles.socialIconsContainer}>
       <a href="https://www.linkedin.com/in/maxsuelfernandob/" target="_blank">
@@ -34,6 +34,6 @@ function SocialIcons() {
       </div>
     </div>
   );
-}
+};
 
 export default SocialIcons;

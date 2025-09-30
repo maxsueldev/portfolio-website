@@ -5,7 +5,7 @@ import whatsapp from "/assets/intro/social/whatsapp.svg";
 
 import styles from "./Footer.module.css";
 
-function Footer() {
+const Footer = () => {
   return (
     <div className={styles.footerContainer}>
       <a href="https://www.linkedin.com/in/maxsuelfernandob/" target="_blank">
@@ -22,6 +22,6 @@ function Footer() {
       </a>
     </div>
   );
-}
+};
 
 export default Footer;

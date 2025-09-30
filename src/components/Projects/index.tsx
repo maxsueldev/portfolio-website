@@ -13,26 +13,21 @@ import Project from "./Project";
 
 import { CSSProperties } from "styled-components";
 import styles from "./Projects.module.css";
+import IProject from "../../interfaces/IProject";
 
-interface IProjectProps {
-  id: number;
-  name: string;
-  description: string;
-  techs: string[];
-  homepage: string;
-  codeUrl: string;
-  imageUrl: string;
-}
-
-function Projects() {
-  const [projects, setProjects] = useState<IProjectProps[]>([]);
+const Projects = () => {
+  const [projects, setProjects] = useState<IProject[]>([]);
 
   const apiProjects = "https://json-server-max.vercel.app/projects";
 
   useEffect(() => {
     const getDataProjects = async () => {
-      const response = await axios.get(apiProjects);
-      setProjects(response.data);
+      try {
+        const response = await axios.get(apiProjects);
+        setProjects(response.data);
+      } catch (error) {
+        console.error("Erro ao buscar projetos: ", error);
+      }
     };
 
     getDataProjects();
@@ -70,6 +65,6 @@ function Projects() {
       </section>
     </>
   );
-}
+};
 
 export default Projects;

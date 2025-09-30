@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import styles from "./About.module.css";
 
-function About() {
+const About = () => {
   return (
     <section className={styles.aboutContainer} id="about">
       <h2 className={styles.title} data-aos="fade-down">
@@ -24,6 +24,6 @@ function About() {
       </p>
     </section>
   );
-}
+};
 
 export default About;

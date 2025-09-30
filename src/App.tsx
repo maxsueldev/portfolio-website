@@ -1,6 +1,7 @@
 // Components
 import Intro from "./components/Intro";
 import About from "./components/About";
+import Technologies from "./components/Technologies/index.jsx";
 import Projects from "./components/Projects/index.tsx";
 import Skills from "./components/Skills";
 import Experiences from "./components/Experiences";
@@ -28,6 +29,7 @@ function App() {
       <div className="main">
         <Intro />
         <About />
+        <Technologies />
         <Projects />
         <Skills />
         <Experiences />

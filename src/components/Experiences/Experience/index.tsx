@@ -1,18 +1,7 @@
+import IExperience from "../../../interfaces/IExperience";
 import styles from "./Experience.module.css";
 
-interface IExperienceProps {
-  title: string;
-  local: string;
-  description?: string;
-  date: string;
-}
-
-function Experience({
-  title,
-  local,
-  description = "",
-  date,
-}: IExperienceProps) {
+const Experience = ({ title, local, description = "", date }: IExperience) => {
   return (
     <div
       className={styles.experienceContainer}
@@ -35,6 +24,6 @@ function Experience({
       </div>
     </div>
   );
-}
+};
 
 export default Experience;

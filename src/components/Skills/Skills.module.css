@@ -1,11 +1,9 @@
 .skillsContainer {
   color: var(--text-color);
-  background-color: var(--secondary-color);
   padding: 3rem 2.5rem;
 }
 
 .skillsContainer h2 {
-  color: var(--tertiary-color);
   text-align: center;
   margin-bottom: 2rem;
 }

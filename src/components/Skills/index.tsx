@@ -2,7 +2,7 @@ import Skill from "./Skill";
 
 import styles from "./Skills.module.css";
 
-function Skills() {
+const Skills = () => {
   return (
     <section className={styles.skillsContainer} id="skills">
       <h2>Habilidades</h2>
@@ -30,6 +30,6 @@ function Skills() {
       </div>
     </section>
   );
-}
+};
 
 export default Skills;

@@ -8,7 +8,7 @@ import photo from "/assets/intro/photo.jpeg";
 
 import styles from "./Intro.module.css";
 
-function Intro() {
+const Intro = () => {
   return (
     <section className={styles.container}>
       <div className={styles.introContainer}>
@@ -30,6 +30,6 @@ function Intro() {
       </div>
     </section>
   );
-}
+};
 
 export default Intro;
