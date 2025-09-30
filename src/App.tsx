@@ -1,8 +1,9 @@
 // Components
+import Header from "./components/Header";
 import Intro from "./components/Intro";
 import About from "./components/About";
-import Technologies from "./components/Technologies/index.jsx";
-import Projects from "./components/Projects/index.tsx";
+import Technologies from "./components/Technologies";
+import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Experiences from "./components/Experiences";
 import Message from "./components/Message";
@@ -22,11 +23,12 @@ function App() {
       easing: "ease", // default easing for AOS animations
       anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
     });
-  });
+  }, []);
 
   return (
     <div className="App">
       <div className="main">
+        <Header />
         <Intro />
         <About />
         <Technologies />
