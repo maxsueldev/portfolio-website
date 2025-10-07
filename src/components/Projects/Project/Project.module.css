@@ -3,7 +3,7 @@
   flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
-  padding: 1.25rem;
+  padding: 1rem;
   margin-top: 1rem;
 }
 
@@ -16,7 +16,7 @@
   font-size: 1.05rem;
   line-height: 1.5rem;
   margin-top: 1rem;
-  padding: 0 3rem;
+  padding: 0 0.6rem;
 }
 
 .description h3 {
@@ -57,6 +57,14 @@
 
 .viewProject svg:hover {
   color: var(--tertiary-color);
+}
+
+.light .description {
+  color: var(--secondary-color);
+}
+
+.light .icon {
+  color: var(--secondary-color);
 }
 
 @media (768px <= width) {

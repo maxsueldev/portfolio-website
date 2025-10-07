@@ -8,10 +8,18 @@
   display: flex;
   justify-content: center;
   gap: 1.2rem;
-  padding: 1rem 0;
+  padding: 1rem 2.3rem;
 }
 
 .icon {
   width: 50px;
   height: 50px;
+}
+
+.light h2 {
+  color: var(--primary-color);
+}
+
+.light .icon {
+  color: var(--secondary-color);
 }

@@ -7,10 +7,17 @@ import SocialIcons from "./SocialIcons";
 import photo from "/assets/intro/photo.jpeg";
 
 import styles from "./Intro.module.css";
+import BtnDarkMode from "./BtnDarkMode";
+import { useTheme } from "../../hooks/useTheme";
 
 const Intro = () => {
+  const { isDarkMode } = useTheme();
+
   return (
-    <section className={styles.container}>
+    <section
+      className={`${styles.container} ${isDarkMode ? "" : styles.light}`}
+    >
+      <BtnDarkMode />
       <div className={styles.introContainer}>
         <div className={styles.circleImage}>
           <img className={styles.photo} src={photo} alt="photo image" />

@@ -1,10 +1,16 @@
+import { useTheme } from "../../hooks/useTheme";
 import Skill from "./Skill";
 
 import styles from "./Skills.module.css";
 
 const Skills = () => {
+  const { isDarkMode } = useTheme();
+
   return (
-    <section className={styles.skillsContainer} id="skills">
+    <section
+      className={`${styles.skillsContainer} ${isDarkMode ? "" : styles.light}`}
+      id="skills"
+    >
       <h2>Habilidades</h2>
       <div className={styles.frontend}>
         <h3>Front-End</h3>

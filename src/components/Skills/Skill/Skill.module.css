@@ -2,7 +2,7 @@
   margin: 0.7rem 0;
 }
 
-.skillContainer p {
+.skillContainer .title {
   font-size: 0.8rem;
   font-style: italic;
 }
@@ -20,4 +20,12 @@
   height: 100%;
   background-color: var(--tertiary-color);
   border-radius: 2rem;
+}
+
+.light .title {
+  color: var(--secondary-color);
+}
+
+.light .contentBox {
+  background-color: var(--quaternary-color);
 }

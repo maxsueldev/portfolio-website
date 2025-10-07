@@ -1,24 +1,30 @@
+import { useTheme } from "../../hooks/useTheme";
+
 // Icons
-import linkedinIcon from "/assets/intro/social/linkedin.svg";
-import githubIcon from "/assets/intro/social/github.svg";
-import whatsapp from "/assets/intro/social/whatsapp.svg";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 
 import styles from "./Footer.module.css";
 
 const Footer = () => {
+  const { isDarkMode } = useTheme();
+
   return (
-    <div className={styles.footerContainer}>
+    <div
+      className={`${styles.footerContainer} ${isDarkMode ? "" : styles.light}`}
+    >
       <a href="https://www.linkedin.com/in/maxsuelfernandob/" target="_blank">
-        <img src={linkedinIcon} alt="Linkedin icon" />
+        <FaLinkedin className={styles.icon} />
       </a>
       <a href="https://github.com/maxsueldev" target="_blank">
-        <img src={githubIcon} alt="GitHub icon" />
+        <FaGithub className={styles.icon} />
       </a>
       <a
         href="https://web.whatsapp.com/send?phone=5582999808600"
         target="_blank"
       >
-        <img src={whatsapp} alt="WhatsApp icon" />
+        <FaWhatsapp className={styles.icon} />
       </a>
     </div>
   );

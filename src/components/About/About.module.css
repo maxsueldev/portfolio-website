@@ -16,6 +16,18 @@
   margin-top: 1.6rem;
 }
 
+.light.aboutContainer {
+  background-color: var(--light-color);
+}
+
+.light .title {
+  color: var(--primary-color);
+}
+
+.light .content {
+  color: var(--secondary-color);
+}
+
 @media (768px <= width) {
   .aboutContainer {
     padding: 3rem 4rem;

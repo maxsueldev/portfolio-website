@@ -2,10 +2,13 @@ import { useState } from "react";
 import emailjs from "@emailjs/browser";
 
 import styles from "./Message.module.css";
+import { useTheme } from "../../hooks/useTheme";
 
 const Message = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+
+  const { isDarkMode } = useTheme();
 
   function sendEmail(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -36,7 +39,10 @@ const Message = () => {
   }
 
   return (
-    <div className={styles.messageContainer} id="message">
+    <div
+      className={`${styles.messageContainer} ${isDarkMode ? "" : styles.light}`}
+      id="message"
+    >
       <h2 className={styles.title}>Contate-me</h2>
       <p>
         Entre em contato diretamente por

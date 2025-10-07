@@ -14,11 +14,13 @@ import Project from "./Project";
 import { CSSProperties } from "styled-components";
 import styles from "./Projects.module.css";
 import IProject from "../../interfaces/IProject";
+import { useTheme } from "../../hooks/useTheme";
 
 const Projects = () => {
   const [projects, setProjects] = useState<IProject[]>([]);
 
   const apiProjects = "https://json-server-max.vercel.app/projects";
+  const { isDarkMode } = useTheme();
 
   useEffect(() => {
     const getDataProjects = async () => {
@@ -36,7 +38,9 @@ const Projects = () => {
   return (
     <>
       <section
-        className={styles.projectsContainer}
+        className={`${styles.projectsContainer} ${
+          isDarkMode ? "" : styles.light
+        }`}
         id="projects"
         data-aos="fade-down"
       >

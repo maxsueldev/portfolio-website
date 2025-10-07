@@ -1,10 +1,15 @@
+import { useTheme } from "../../../hooks/useTheme";
 import IExperience from "../../../interfaces/IExperience";
 import styles from "./Experience.module.css";
 
 const Experience = ({ title, local, description = "", date }: IExperience) => {
+  const { isDarkMode } = useTheme();
+
   return (
     <div
-      className={styles.experienceContainer}
+      className={`${styles.experienceContainer} ${
+        isDarkMode ? "" : styles.light
+      }`}
       data-aos="fade-up"
       data-aos-offset="200"
       data-aos-delay="50"

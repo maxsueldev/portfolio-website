@@ -1,10 +1,18 @@
+import { useTheme } from "../../hooks/useTheme";
 import Experience from "./Experience";
 
 import styles from "./Experiences.module.css";
 
 const Experiences = () => {
+  const { isDarkMode } = useTheme();
+
   return (
-    <section className={styles.experiencesContainer} id="experiences">
+    <section
+      className={`${styles.experiencesContainer} ${
+        isDarkMode ? "" : styles.light
+      }`}
+      id="experiences"
+    >
       <h2 className={styles.title}>Experiências</h2>
       <Experience
         title="Empreendedor"

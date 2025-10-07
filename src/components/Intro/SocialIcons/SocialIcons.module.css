@@ -4,13 +4,16 @@
   margin: 2rem auto 0 auto;
 }
 
-.socialIconsContainer img:hover {
+.socialIconsContainer .icon {
+  width: 2.2rem;
+  height: 2.2rem;
+}
+
+.socialIconsContainer .icon:hover {
   transform: translateY(-50%);
   transition: transform 0.5s ease;
 }
 
-@media (481px <= width) {
-  .socialIconsContainer img {
-    width: 2rem;
-  }
+.light .icon {
+  color: var(--primary-color);
 }

@@ -12,6 +12,14 @@
   text-align: center;
 }
 
+.light h2 {
+  color: var(--primary-color);
+}
+
+.light h3 {
+  color: var(--secondary-color);
+}
+
 @media (768px <= width) {
   .skillsContainer {
     padding: 4rem 6rem;

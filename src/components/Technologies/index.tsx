@@ -6,10 +6,17 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { IoLogoJavascript } from "react-icons/io";
 import { SiStyledcomponents } from "react-icons/si";
 import { SiCssmodules } from "react-icons/si";
+import { useTheme } from "../../hooks/useTheme";
 
 const Technologies = () => {
+  const { isDarkMode } = useTheme();
+
   return (
-    <section className={styles.technologiesSection}>
+    <section
+      className={`${styles.technologiesSection} ${
+        isDarkMode ? "" : styles.light
+      }`}
+    >
       <h2>Tecnologias</h2>
       <div className={styles.container}>
         <FaReact className={styles.icon} />

@@ -10,6 +10,14 @@
   padding: 0 3rem;
 }
 
+.light.projectsContainer {
+  background-color: var(--light-color);
+}
+
+.light h2 {
+  color: var(--primary-color);
+}
+
 @media (1025px <= width) {
   .projectsContainer {
     padding: 5rem 5rem;

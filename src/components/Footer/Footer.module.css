@@ -4,8 +4,17 @@
   gap: 1rem;
   background-color: var(--secondary-color);
   padding: 1rem 0;
+}
 
-  img {
-    width: 2rem;
-  }
+.footerContainer .icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.light.footerContainer {
+  background-color: var(--light-color);
+}
+
+.light .icon {
+  color: var(--primary-color);
 }

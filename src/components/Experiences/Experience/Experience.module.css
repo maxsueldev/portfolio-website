@@ -25,6 +25,16 @@
   color: var(--tertiary-color);
 }
 
+.light .title {
+  color: var(--primary-color);
+}
+
+.light .content,
+.light .local,
+.light .description {
+  color: var(--secondary-color);
+}
+
 @media (768px <= width) {
   .experienceContainer {
     flex-direction: row;
