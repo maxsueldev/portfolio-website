@@ -10,7 +10,7 @@ const Experience = ({ title, local, description = "", date }: IExperience) => {
       className={`${styles.experienceContainer} ${
         isDarkMode ? "" : styles.light
       }`}
-      data-aos="fade-up"
+      data-aos="fade-down"
       data-aos-offset="200"
       data-aos-delay="50"
       data-aos-duration="1000"
