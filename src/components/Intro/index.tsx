@@ -15,7 +15,7 @@ const Intro = () => {
 
   return (
     <section
-      className={`${styles.container} ${isDarkMode ? "" : styles.light}`}
+      className={`${styles.introSection} ${isDarkMode ? "" : styles.light}`}
     >
       <BtnDarkMode />
       <div className={styles.introContainer}>
