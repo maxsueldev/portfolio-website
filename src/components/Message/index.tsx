@@ -20,7 +20,7 @@ const Message = () => {
 
     emailjs
       .send(
-        "service_dhftnhf",
+        "service_xhzjl48",
         "template_vu8a5nr",
         templateParams,
         "b-M1bCZqP2Z9N8Qdx"

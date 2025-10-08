@@ -82,6 +82,11 @@
   color: var(--text-color);
 }
 
+.light form button {
+  border: 1px solid var(--primary-color);
+  color: var(--secondary-color);
+}
+
 @media (481px <= width) {
   .messageContainer p {
     text-align: center;
