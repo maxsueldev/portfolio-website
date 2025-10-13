@@ -19,14 +19,16 @@ const About = () => {
       </p>
 
       <p className={styles.content} data-aos="fade-down">
-        Tenho conhecimento sólido em tecnologias como React, JavaScript, CSS,
-        Tailwind CSS, e estou sempre buscando melhorar minhas habilidades em
-        UX/UI, acessibilidade e boas práticas de código.
+        Tenho conhecimento sólido em HTML, CSS e JavaScript. Conhecimento em
+        Desenvolvimento com React e TypeScript. Conhecimento em React Hooks,
+        React-Router, React Hook Form, Context API, Styled Components, CSS
+        Modules e Tailwind.
       </p>
-
       <p className={styles.content} data-aos="fade-down">
-        Meu objetivo é colaborar com equipes que valorizam qualidade,
-        aprendizado contínuo e impacto positivo através da tecnologia.
+        Capacidade de consumir e integrar APIs REST. Proficiência em Git para
+        controle de versão e colaboração. Noções de UX/UI, incluindo conceitos
+        como usabilidade, acessibilidade e design responsivo. Boa capacidade de
+        trabalho em equipe e disposição para aprendizado contínuo.
       </p>
     </section>
   );
